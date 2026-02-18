@@ -720,12 +720,28 @@ footer {
         </a>
       </div>
     </div>
-    <form class="cform reveal" onsubmit="return false;">
-      <div class="fg"><label>Name</label><input type="text" placeholder="Your name"></div>
-      <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"></div>
-      <div class="fg"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
-      <button type="submit" class="btn-primary" style="width:100%;padding:16px;border:none;cursor:none;font-size:0.92rem;">Send Message ✦</button>
-    </form>
+    <form name="contact" method="POST" data-netlify="true" class="cform">
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="fg">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Your name" required>
+  </div>
+
+  <div class="fg">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="you@email.com" required>
+  </div>
+
+  <div class="fg">
+    <label>Message</label>
+    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary" style="width:100%;padding:16px;border:none;cursor:none;font-size:0.92rem;">
+    Send Message ✦
+  </button>
+</form>
   </div>
 </section>
 
