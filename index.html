@@ -720,26 +720,31 @@ footer {
         </a>
       </div>
     </div>
-    <form class="cform" onsubmit="event.preventDefault(); alert('Message feature coming soon 🚀');">
+    <form 
+  action="https://formspree.io/f/mzdavbgv" 
+  method="POST"
+  class="cform reveal"
+>
 
   <div class="fg">
     <label>Name</label>
-    <input type="text" name="name" placeholder="Your name" required>
+    <input type="text" name="name" required placeholder="Your name">
   </div>
 
   <div class="fg">
     <label>Email</label>
-    <input type="email" name="email" placeholder="you@email.com" required>
+    <input type="email" name="email" required placeholder="you@email.com">
   </div>
 
   <div class="fg">
     <label>Message</label>
-    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+    <textarea name="message" required placeholder="Tell me about your project..."></textarea>
   </div>
 
-  <button type="submit" class="btn-primary" style="width:100%;padding:16px;border:none;cursor:none;font-size:0.92rem;">
+  <button type="submit" class="btn-primary" style="width:100%;padding:16px;border:none;cursor:pointer;font-size:0.92rem;">
     Send Message ✦
   </button>
+
 </form>
   </div>
 </section>
